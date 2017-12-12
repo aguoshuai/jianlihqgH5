@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type">
+<meta content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+    <title>我的H5简历</title>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <link rel="stylesheet" type="text/css" href="animations.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="page.css">
+    <link rel="stylesheet" href="index.css">
+    <!--<script src="jquery-3.1.1.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script src=""></script> -->
+   
+<!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type">
+<meta content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<title>zepto实现手机端滚屏效果</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="animations.css">
+<link rel="stylesheet" type="text/css" href="layout.css">
+<link rel="stylesheet" type="text/css" href="page.css">
+<link rel="stylesheet" href="animate.css">-->
+
+</head>
+<style>
+    .cover-play {-webkit-animation: turn 6s infinite linear;animation: turn 6s infinite linear;-o-animation: turn 6s infinite linear;}
+@keyframes turn {0% { transform: rotate(0deg);}25% {transform: rotate(90deg);}50%{transform: rotate(180deg);}75%{transform: rotate(270deg);}100%{transform: rotate(360deg);}}
+@-webkit-keyframes turn{0%{transform: rotate(0deg);}25%{transform: rotate(90deg);}50%{transform: rotate(180deg);}75%{transform: rotate(270deg);}100%{transform: rotate(360deg);}}
+@-o-keyframes turn{0%{transform: rotate(0deg);}25%{transform: rotate(90deg);}50%{transform: rotate(180deg);}75%{transform: rotate(270deg);}100%{transform: rotate(360deg);}}
+</style>
+<script>
+		var pixelRatio = 1 / window.devicePixelRatio;   
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');//动态控制像素比
+		var html=document.getElementsByTagName('html')[0];
+		var pageWidth=html.getBoundingClientRect().width;
+		html.style.fontSize=pageWidth/10+"px";
+	</script>
+<body>
+    <img src="img/icon_up.png" alt="" class="arrow-up pt-page-moveIconUp zongtu">
+    <!--<audio controls class="yingyue" >
+  <source src="Eagles - 加州旅馆.mp3" >
+</audio>-->
+<!--<div class="yingyue">
+<embed src="Eagles - 加州旅馆.mp3" hidden="true" autostart="true" loop="true" class="toggle">
+</div>-->
+<div class="one">
+    <img class="a cover-play" src="img/yuefu1.jpg" style=" position: fixed; top: 5px; right:5px; z-index: 10; border-radius: 50%; width: 100px;">
+   
+</div>
+    <audio id="play" src="文武贝 - 星空.mp3"  autostart="flase" loop="true" autoplay="autoplay"></audio>
+
+
+    
+<div id="page-content">
+  <div class="page page-1 page-current" style="background:black;">
+      <div class="div1">
+    <img src="img/file_594b2dcd1bac7.gif" >
+    <img src="img/11.png " class="wow fadeInRight">
+    <img src="img/33.png" alt="" class="wow fadeInLeft">
+    <img src="img/22.png" alt="" class="wow fadeInRight">
+    <img src="img/44.png" alt="" class="wow fadeInRight">
+    <img src="img/55.png" alt="" class="wow fadeInRight">
+    <img src="img/66.png" alt="" class="wow fadeInRight">
+    <img src="img/77.png" alt="" class="wow fadeInLeft">
+    <img src="img/22.png" alt="" class="wow fadeInLeft">
+    <img src="img/77.png" alt="" class="wow fadeInLeft">
+    <img src="img/44.png" alt="" class="wow fadeInRight">
+     <img src="img/88.png" alt="" class="wow fadeInUpBig">
+     <img src="img/99.png" alt="" class="wow fadeInRight">
+    <h4 class="wow fadeInRight">胡庆国</h4>
+    <p class="wow fadeInRight">应聘web前端开发工程师</p>
+   
+      </div>
+  </div>
+  <div class="page page-2 hide ">
+      <div class="div2">
+    <img src="img/1.png" alt="" class="wow fadeInLeft">
+    <img src="img/77.png" alt="" class="wow fadeInLeft">
+    <img src="img/55.png" alt="" class="wow fadeInLeft">
+    <img src="img/zhaopian.jpg" alt="" class="wow rotateInDownLeft">
+    <img src="img/77.png" alt="" class="wow fadeInLeft">
+    <img src="img/77.png" alt="" class="wow fadeInRight">
+    <img src="img/55.png" alt="" class="wow fadeInLeft">
+    <img src="img/33.png" alt="" class="wow fadeInLeft">
+    <img src="img/66.png" alt="" class="wow fadeInRight" data-wow-delay='0.5s'>
+    <img src="img/44.png" alt="" class="wow fadeInRight">
+    <img src="img/88.png" alt="" class="wow fadeInUp">
+    <img src="img/99.png" alt="" class="wow fadeInRight">
+    <h2 class="wow fadeInRight">基本资料</h2>
+    <p class="p1 wow bounceIn" data-wow-delay='0.8s'>姓名: <span>胡庆国</span></p>
+    <p class="p2 wow bounceIn" data-wow-delay='1.3s'>专业：<span>计算机应用</span></p>
+    <p class="p3 wow bounceIn" data-wow-delay='1.8s'>电话：<span>15256900279</span></p>
+    <p class="p4 wow bounceIn" data-wow-delay='2.3s'>学历：<span>本科</span></p>
+    <p class="p5 wow bounceIn" data-wow-delay='2.8s'>年龄：<span>23</span></p>
+    <p class="p6 wow bounceIn" data-wow-delay='3.3s'>邮箱：<span>1924275557@qq.com</span></p>
+      </div>
+  </div>
+  <div class="page page-3 hide" >
+    <div class="div3">
+        <img src="img/1.png" alt="" class="p11 wow fadeInLeft">
+        <img src="img/77.png" alt="" class="p22 wow fadeInLeft">
+        <img src="img/55.png" alt="" class="p33 wow fadeInLeft">
+        <img src="img/55.png" alt="" class="p44 wow fadeInLeft">
+        <img src="img/33.png" alt="" class="p55 wow fadeInLeft">
+        <img src="img/44.png" alt="" class="p66">
+        <img src="img/55.png" alt="" class="p77">
+        <p class="p1 wow rotateInDownLeft"  data-wow-delay="0.5s">
+        <img src="img/t_1498120942594b82ee0289b.png" alt="" class="img1">
+        <span>
+        2015年获得暑期活动优秀学生奖
+        </h4>
+        </span>
+        <p class="p2 wow rotateInDownLeft"  data-wow-delay="1s">
+            
+        <img src="img/t_1498121230594b840e7ccdd.png" alt="" class="img2">
+        <span>
+            2016年获得优秀班干部证书
+            </span>
+        </p>
+        <p class="p3 wow rotateInDownLeft" data-wow-delay="1.5s">
+            
+        <img src="img/t_1498121230594b840e15518.png" alt="" class="img3">
+        <span>
+            2016年获得安徽科技大赛二等奖
+            </span>
+        </p>
+          <h2 class="wow fadeInRight">技能获奖</h2>
+          <img src="img/88.png" alt="" class="dibu wow fadeInUp">
+         
+    </div>
+  </div>
+  <div class="page page-4 hide">
+      <div class="div4">
+          <img src="img/1.png" alt="" class="p11 wow fadeInLeft">
+        <img src="img/77.png" alt="" class="p22 wow fadeInLeft">
+        <img src="img/55.png" alt="" class="p33 wow fadeInLeft">
+        <img src="img/55.png" alt="" class="p44 wow fadeInLeft">
+        <img src="img/33.png" alt="" class="p55 wow fadeInLeft">
+        <img src="img/44.png" alt=""  class="p66 wow fadeInRight">
+         <img src="img/66.png" alt=""  class="p77 wow fadeInRight">
+         <img src="img/baoshijie.png" alt="" class="p88 wow rotateInDownRight" data-wow-delay="1s" >
+         <img src="img/jingdong.png" alt="" class="p99 wow rotateInDownLeft" data-wow-delay="2.0s">
+         <img src="img/feixiansheng.png" alt="" class="p100 wow bounceInDown"data-wow-delay="1.5s">
+          <img src="img/peixun.png" alt="" class="p101 wow bounceInDown" data-wow-delay="2.5s">
+          <img src="img/88.png" alt="" class="p102 wow fadeInUpBig">
+        <h2 class="wow fadeInRight">作品展示</h2>
+      </div>
+  </div>
+<div class="page page-5 hide">
+      <div class="div4 div5">
+          <img src="img/1.png" alt="" class="p11 wow fadeInLeft">
+        <img src="img/77.png" alt="" class="p22 wow fadeInLeft">
+        <img src="img/55.png" alt="" class="p33 wow fadeInLeft">
+        <img src="img/55.png" alt="" class="p44 wow fadeInLeft">
+        <img src="img/33.png" alt="" class="p55 wow fadeInLeft">
+        <img src="img/44.png" alt=""  class="p66 wow fadeInRight">
+         <img src="img/66.png" alt=""  class="p77 wow fadeInRight">
+        
+          <img src="img/88.png" alt="" class="p102 wow fadeInUpBig">
+        <h2 class="wow fadeInRight">自我评价</h2>
+        <p class="jia1 wow rotateIn">本人具有扎实的网页设计专业知识，能独立完成网页的代码编写即网页样式，并且具有良好的学习能力与团队协作能力，能配合好团队完成相应的任务。
+            并且本人已有1年工作经验，目前处于离职状态，如贵公司有需求，可立即到岗。
+        </p>
+      </div>
+  </div>
+ <div class="page page-6 hide">
+      <div class="div4 div6">
+        <img src="img/1.png" alt="" class="p11 wow fadeInLeft">
+        <img src="img/77.png" alt="" class="p22 wow fadeInLeft">
+        <img src="img/55.png" alt="" class="p33 wow fadeInLeft">
+        <img src="img/55.png" alt="" class="p44 wow fadeInLeft">
+        <img src="img/33.png" alt="" class="p55 wow fadeInLeft">
+        <img src="img/44.png" alt=""  class="p66 wow fadeInRight">
+        <img src="img/66.png" alt=""  class="p77 wow fadeInRight">
+         
+         <h2 class="wow fadeInRight">掌握技能</h2>
+         <p class="jinneg1 wow bounceInDown" bounceInDown>1:熟练使用html5，css3，css等布局样式。</p>
+         <p class="jinneg2 wow bounceInDown" data-wow-delay="1s">2:熟练使用javascript，jQuery等基本语言。</p>
+         <p class="jinneg3 wow bounceInDown" data-wow-delay="1.5s">3:熟练使用less/sass。</p>
+         <p class="jinneg4 wow bounceInDown" data-wow-delay="2.5s">4:熟练使用bootstrapt，mui，swipter,reset等框架。</p>
+         <p class="jinneg5 wow bounceInDown" data-wow-delay="3s">5:了解php，ajax等后端交互</p>
+         <p class="jinneg6 wow bounceInDown" data-wow-delay="3.5s">6:熟练使用photoshop，能快速的切图，并且具有良好的审美观。</p>
+         <p class="jinneg7 wow bounceInDown" data-wow-delay="4s">7:了解微信公众号开发即运营。</p>
+         <img src="img/88.png" alt="" class="p102 wow fadeInUpBig">
+      </div>
+  </div>
+   <div class="page page-7 hide">
+      <div class="div4 div6 div7">
+          
+        <img src="img/77.png" alt="" class="p22 wow fadeInLeft">
+        <img src="img/55.png" alt="" class="p33 wow fadeInLeft">
+        <img src="img/55.png" alt="" class="p44 wow fadeInLeft">
+        <img src="img/33.png" alt="" class="p55 wow fadeInLeft">
+        <img src="img/44.png" alt=""  class="p66 wow fadeInRight">
+        <img src="img/66.png" alt=""  class="p77 wow fadeInRight">
+        <img src="img/88.png" alt="" class="p102 wow fadeInUpBig">
+          <h2 class="h1 wow bounceInDown" data-wow-delay="0.5s">学</h2>
+          <h2 class="h2 wow bounceInDown" data-wow-delay="1s">海</h2>
+          <h2 class="h3 wow bounceInDown" data-wow-delay="1.5s">无</h2>
+          <h2 class="h4 wow bounceInDown" data-wow-delay="2s">涯</h2>
+          <h2 class="h5 wow bounceInDown" data-wow-delay="2.5s">唯</h2>
+          <h2 class="h6 wow bounceInDown" data-wow-delay="3s">勤</h2>
+          <h2 class="h7 wow bounceInDown" data-wow-delay="3.5s">作</h2>
+          <h2 class="h8 wow bounceInDown" data-wow-delay="4s">伴</h2>
+                 
+      </div>
+  </div>
+  
+</div>
+
+<script type="text/javascript" src="zepto.js"></script> 
+<script type="text/javascript" src="touch.js"></script> 
+<script type="text/javascript" src="index.js"></script>
+<script src="jquery-3.1.1.min.js"></script>
+<script src="wow.min.js"></script>
+<script src="ziji.js"></script>
+<script>
+     $(function(){
+          //wow
+          new WOW().init();  //wow依赖animate，必须要跟animate一起来写
+      })
+</script>
+</body>
+</html>
